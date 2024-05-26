@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2'
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import SocialLogin from "../../components/SocialLogin/SocialLogin";
+import loginImg from '../../assets/authentication2 1.png';
 
 const SignUp = () => {
     const axiosPublic = useAxiosPublic();
@@ -54,10 +55,9 @@ const SignUp = () => {
                 <title>Bistro Boss | Sign Up</title>
             </Helmet>
             <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+                <div className="hero-content flex-col lg:flex-row">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Sign up now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <img src={loginImg} />
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
@@ -101,10 +101,10 @@ const SignUp = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <input className="btn btn-primary" type="submit" value="Sign Up" />
+                                <input className="btn bg-[#D1A054] border-0 opacity-70" type="submit" value="Sign Up" />
                             </div>
                         </form>
-                        <p className="px-6"><small>Already have an account <Link to="/login">Login</Link></small></p>
+                        <p className="px-6 underline text-[#D1A054]"><small>Already have an account <Link to="/login">Login</Link></small></p>
                         <SocialLogin></SocialLogin>
                     </div>
                 </div>

@@ -103,10 +103,10 @@ const AddItems = () => {
                     </div>
 
                     <div className="form-control w-full my-6">
-                        <input {...register('image', { required: true })} type="file" className="file-input w-full max-w-xs" />
+                        <input {...register('image', { required: true })} type="file" className="file-input text-white  bg-[#D1A054] border-0 w-full max-w-xs" />
                     </div>
 
-                    <button className="btn">
+                    <button className="btn bg-[#D1A054] border-0">
                         Add Item <FaUtensils className="ml-4"></FaUtensils>
                     </button>
                 </form>

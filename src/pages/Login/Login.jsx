@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Swal from 'sweetalert2'
 import SocialLogin from '../../components/SocialLogin/SocialLogin';
+import loginImg from '../../assets/authentication2 1.png';
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true);
@@ -60,8 +61,7 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col md:flex-row-reverse">
                     <div className="text-center md:w-1/2 lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                       <img src={loginImg} />
                     </div>
                     <div className="card md:w-1/2 max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleLogin} className="card-body">
@@ -87,12 +87,12 @@ const Login = () => {
                                 <input onBlur={handleValidateCaptcha} type="text" name="captcha" placeholder="type the captcha above" className="input input-bordered" />
 
                             </div>
-                            <div className="form-control mt-6">
+                            <div className="form-control mt-2">
                                 {/* TODO: apply disabled for re captcha */}
-                                <input disabled={false} className="btn btn-primary" type="submit" value="Login" />
+                                <input disabled={false} className="btn bg-[#D1A054] border-0 opacity-70" type="submit" value="Login" />
                             </div>
                         </form>
-                        <p className='px-6'><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
+                        <p className='px-6 underline text-[#D1A054]'><small>New Here? <Link to="/signup">Create an account</Link> </small></p>
                         <SocialLogin></SocialLogin>
                     </div>
                 </div>
