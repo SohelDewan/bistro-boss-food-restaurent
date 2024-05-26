@@ -54,7 +54,8 @@ const SignUp = () => {
             <Helmet>
                 <title>Bistro Boss | Sign Up</title>
             </Helmet>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen">
+            <img className='w-0 lg:w-full' src="https://i.ibb.co/SQK6H5q/bgStyle.png" />
                 <div className="hero-content flex-col lg:flex-row">
                     <div className="text-center lg:text-left">
                     <img src={loginImg} />

@@ -63,7 +63,7 @@ import AdminHome from "../Layout/AdminHome";
          // admin only routes
          {
           path: 'addItems',
-          element: <AdminRoute><AddItems></AddItems></AdminRoute>
+          element: <AdminRoute><AddItems></AddItems></AdminRoute> 
         },
         {
           path: 'manageItems',
