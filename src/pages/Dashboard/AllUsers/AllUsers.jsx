@@ -85,9 +85,9 @@ const AllUsers = () => {
                                 <td>
                                     { user.role === 'admin' ? 'Admin' : <button
                                         onClick={() => handleMakeAdmin(user)}
-                                        className="btn btn-lg bg-orange-500">
+                                        className="btn btn-lg bg-[#D1A054] border-0">
                                         <FaUsers className="text-white 
-                                        text-2xl"></FaUsers>
+                                        text-xl"></FaUsers>
                                     </button>}
                                 </td>
                                 <td>
